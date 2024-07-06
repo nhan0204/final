@@ -17,7 +17,6 @@ import { WalletButton } from '../../solana/solana-provider';
 
 import { useState } from "react";
 
-require("../../App.css");
 
 
 
