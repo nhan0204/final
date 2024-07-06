@@ -9,7 +9,7 @@ const AccountDetailFeature = lazy(
 const ClusterFeature = lazy(() => import('./cluster/cluster-feature'));
 const DashboardFeature = lazy(() => import('./dashboard/dashboard-feature'));
 
-const CounterFeature = lazy(() => import('./counter/counter-feature'));
+const CounterFeature = lazy(() => import('./medita/medita-feature'));
 const links: { label: string; path: string }[] = [
   { label: 'Account', path: '/account' },
   { label: 'Clusters', path: '/clusters' },
