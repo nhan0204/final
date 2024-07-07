@@ -15,7 +15,7 @@ import { useContext } from "react";
 import { ColorModeContext, tokens } from "../../theme";
 import { WalletButton } from '../../solana/solana-provider';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
-import { useState } from "react";
+import React, { useState } from "react";
 
 require("../../Topbar.css");
 

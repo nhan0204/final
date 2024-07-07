@@ -5,10 +5,18 @@ import Sidebar from "./scenes/global/Sidebar";
 import Topbar from "./scenes/global/Topbar";
 import { SolanaProvider } from './solana/solana-provider';
 import { ColorModeContext, useMode } from './theme';
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
+import Calendar from "./scenes/calendar";
+import Message from "./scenes/message";
+import Patient from "./scenes/patient";
+import Dashboard from './dashboard';
+// export Dashboard from './Dashboard';
+
 
 const client = new QueryClient();
 
-export function App() {
+export function App () {
   const [theme, colorMode] = useMode();
 
   return (
@@ -21,14 +29,15 @@ export function App() {
               <Sidebar>
                 <main className="content">
                 <Topbar />
-                  {/* <Routes>
-                    <Route path="/" element={<Dashboard />}></Route>
-                    <Route path="/dashboard" element={<Dashboard />}></Route>
-                    <Route path="/patient" element={<Patient />}></Route>
+                  <Routes>
+                    {/* <Route path="/" element={<Dashboard />}></Route>
                     <Route path="/calendar" element={<Calendar />}></Route>
-                    <Route path="/request" element={<Request />}></Route>
+                    <Route path="/request" element={<Request />}></Route>*/}
+                    <Route path="/dashboard" element={<Dashboard />}></Route>
                     <Route path="/message" element={<Message />}></Route>
-                  </Routes> */}
+                    <Route path="/calendar" element={<Calendar />}></Route>
+                    <Route path="/patient" element={<Patient />}></Route>
+                  </Routes>
                 </main>
               </Sidebar>
               </CssBaseline>

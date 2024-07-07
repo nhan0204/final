@@ -11,7 +11,7 @@ import {
   WalletModalProvider,
   WalletMultiButton,
 } from '@solana/wallet-adapter-react-ui';
-import { ReactNode, useCallback, useMemo } from 'react';
+import React, { ReactNode, useCallback, useMemo } from 'react';
 import { useCluster } from '../cluster/cluster-data-access';
 
 require('@solana/wallet-adapter-react-ui/styles.css');
